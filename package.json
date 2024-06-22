@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsc -w"
+  },
+  "bin": {
+    "lms": "bin/lms.js"
   },
   "keywords": [],
   "author": "Eternal-could",
