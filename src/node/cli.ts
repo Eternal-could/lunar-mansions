@@ -1,7 +1,9 @@
 import cac from 'cac';
 import {createDevServer} from './dev';
 
-const cli = cac('lms').version('0.0.1').help()
+const version = require('../../package.json').version
+
+const cli = cac('lms').version(version).help()
 
 cli.command('dev [root]', 'start dev server').action(async (root: string) => {
   const server = await createDevServer(root)
